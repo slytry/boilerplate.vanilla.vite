@@ -1,30 +1,47 @@
 {
-  "name": "boilerplate.vanilla.vite",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/slytry/boilerplate.vanilla.vite.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/slytry/boilerplate.vanilla.vite/issues"
-  },
-  "homepage": "https://github.com/slytry/boilerplate.vanilla.vite#readme",
-  "devDependencies": {
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "sass": "^1.55.0",
-    "vite": "^3.1.0"
-  }
+	"name": "boilerplate.vanilla.vite",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"author": "naumov99.rst@gmail.com",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"eslint": "eslint . --ext .js --ext .ts --fix",
+		"prettier": "prettier --ignore-unknown --write .",
+		"stylelint": "stylelint --fix \"**/*.scss\"",
+		"log": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
+		"preinstall": "npx only-allow pnpm",
+		"prepare": "husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/slytry/boilerplate.vanilla.vite.git"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/slytry/boilerplate.vanilla.vite/issues"
+	},
+	"homepage": "https://github.com/slytry/boilerplate.vanilla.vite#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
+		"conventional-changelog-cli": "^2.2.2",
+		"eslint": "^8.26.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"postcss": "^8.4.18",
+		"prettier": "2.6.2",
+		"sass": "^1.55.0",
+		"stylelint": "^14.14.0",
+		"stylelint-config-sass-guidelines": "^9.0.1",
+		"vite": "^3.2.1",
+		"vite-plugin-html": "^3.2.0",
+		"vite-plugin-imagemin": "^0.6.1",
+		"vite-plugin-zip-pack": "^1.0.4"
+	}
 }
