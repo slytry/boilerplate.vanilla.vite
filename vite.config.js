@@ -6,7 +6,7 @@ import zipPack from 'vite-plugin-zip-pack';
 const publicDir = '../public';
 const src = resolve(process.cwd(), 'src');
 const outDir = resolve(process.cwd(), 'dist');
-const _pages = resolve(src, 'pages');
+const pages = resolve(src, 'pages');
 
 export default defineConfig({
 	root: src,
@@ -23,7 +23,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(src, 'index.html'),
-				secondPage: resolve(_pages, 'second-page', 'second-page.html'),
+				secondPage: resolve(pages, 'second/index.html'),
 			},
 		},
 	},

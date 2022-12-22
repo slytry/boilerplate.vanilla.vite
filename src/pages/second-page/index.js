@@ -1,1 +1,0 @@
-import './second-page.scss';
