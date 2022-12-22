@@ -1,0 +1,32 @@
+@use 'sass:math';
+@use 'utils' as *;
+@use 'sass:string';
+
+@function fluid(
+	$minSize,
+	$maxSize,
+	$units: 'vw',
+	$minWidth: 375,
+	$maxWidth: 1440
+) {
+	// convert to rem
+	$minSize: math.div($minSize, 16);
+	$maxSize: math.div($maxSize, 16);
+	$maxWidth: math.div($maxWidth, 16);
+	$minWidth: math.div($minWidth, 16);
+	// do calculations
+	$slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+	$yAxisIntersection: -$minWidth * $slope + $minSize;
+	$preferredValue: '#{decimalRound($yAxisIntersection,3)}rem + #{decimalRound(($slope*100),3) }#{$units}';
+	// output as rem
+	$minSize: decimalRound($minSize, 3) * 1rem;
+	$maxSize: decimalRound($maxSize, 3) * 1rem;
+	@return clamp(#{$minSize}, #{$preferredValue}, #{$maxSize});
+}
+
+@function relative($size, $width: 1440, $unit: '%') {
+	$relativeValue: math.div($size, $width);
+	$roundedValue: decimalRound($relativeValue * 100, 3);
+	$value: string.unquote($roundedValue + $unit);
+	@return $value;
+}

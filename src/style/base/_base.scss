@@ -1,0 +1,29 @@
+@use '/style/abstract' as *;
+
+body {
+	background: var(--alpha);
+	color: var(--bravo);
+	display: flex;
+	flex-direction: column;
+	font-family: var(--systemFont);
+	line-height: 1.5;
+	min-height: 100vh;
+	padding: 5vh clamp(1rem, 5vw, 3rem) 1rem;
+}
+
+body > * {
+	--layout-spacing: max(8vh, 3rem);
+	--max-width: 100ch;
+	margin-left: auto;
+	margin-right: auto;
+	width: min(100%, var(--max-width));
+}
+
+body > main {
+	margin-top: var(--layout-spacing);
+}
+
+body > footer {
+	margin-top: auto;
+	padding-top: var(--layout-spacing);
+}

@@ -1,0 +1,34 @@
+:root {
+	--container-max: 1440px;
+	--shadow: 0 0 25px 1px rgba(0, 0, 0, 0.36);
+	--border: 2px solid var(--bravo);
+	--gap: 1rem;
+	--systemFont: system-ui, sans-serif;
+}
+
+:root {
+	/* Color Theme Swatches in HSLA */
+	--rough-asphalt: #bdbfbf;
+	--black-wash: #0d0d0c;
+	--nero: #262625;
+	--poppy-pods: #a0614a;
+	--poppy-podsfl: #6d4435;
+	--bleached-silk: #f2f2f2;
+
+	/* Dark Color Theme */
+	--alpha: var(--bleached-silk);
+	--bravo: var(--black-wash);
+	--charlie: var(--rough-asphalt);
+	--delta: var(--poppy-podsfl);
+
+	@media (prefers-color-scheme: dark) {
+		--alpha: var(--black-wash);
+		--bravo: var(--bleached-silk);
+		--charlie: var(--nero);
+		--delta: var(--poppy-pods);
+
+		html {
+			color-scheme: dark;
+		}
+	}
+}

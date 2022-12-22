@@ -1,0 +1,15 @@
+@use 'sass:math';
+@use 'utils' as *;
+
+@function rem($size) {
+	$remValue: math.div($size, 16);
+	$roundedValue: decimal-round($remValue, 3) * 1rem;
+
+	@return $roundedValue;
+}
+
+@function em($size) {
+	$remValue: math.div($size, 16);
+	$roundedValue: decimal-round($remValue, 3) * 1em;
+	@return $roundedValue;
+}

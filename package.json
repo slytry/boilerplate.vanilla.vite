@@ -3,9 +3,8 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"author": "naumov99.rst@gmail.com",
 	"description": "",
-	"main": "index.js",
+	"main": "main.js",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
@@ -17,15 +16,7 @@
 		"preinstall": "npx only-allow pnpm",
 		"prepare": "husky install"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/slytry/boilerplate.vanilla.vite.git"
-	},
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/slytry/boilerplate.vanilla.vite/issues"
-	},
-	"homepage": "https://github.com/slytry/boilerplate.vanilla.vite#readme",
 	"devDependencies": {
 		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
