@@ -1,0 +1,174 @@
+{
+	//===========================================
+	//============= Theme =======================
+	//===========================================
+	"workbench.productIconTheme": "fluent-icons",
+	"workbench.iconTheme": "material-icon-theme",
+	//===========================================
+	//============= Editor ======================
+	//===========================================
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": true,
+		"source.fixAll.eslint": true
+	},
+	"editor.wordSeparators": "`~!@#$%^&*()_-=+[{]}\\|;:'\",.<>/?",
+	"editor.formatOnPaste": false,
+	"editor.formatOnType": false,
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.linkedEditing": false,
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "expand",
+	"editor.cursorStyle": "line",
+	"editor.cursorWidth": 2,
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.renderWhitespace": "boundary",
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wordWrapColumn": 100,
+	"explorer.compactFolders": false,
+	"editor.mouseWheelZoom": true,
+	"editor.unusualLineTerminators": "auto",
+	"editor.glyphMargin": false,
+	"editor.guides.bracketPairs": true,
+	//===========================================
+	//============= Linters =====================
+	//===========================================
+	"eslint.alwaysShowStatus": true,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"css.validate": false,
+	"scss.validate": false,
+	"stylelint.enable": true,
+	"stylelint.validate": [
+		"css",
+		"scss"
+	],
+	"prettier.requireConfig": true,
+	"cSpell.language": "en,ru",
+	"cSpell.words": [
+		"vben",
+		"windi",
+		"browserslist",
+		"tailwindcss",
+		"esnext",
+		"antv",
+		"tinymce",
+		"qrcode",
+		"sider",
+		"pinia",
+		"sider",
+		"nprogress",
+		"INTLIFY",
+		"stylelint",
+		"esno",
+		"vitejs",
+		"sortablejs",
+		"mockjs",
+		"codemirror",
+		"iconify",
+		"commitlint",
+		"vditor",
+		"echarts",
+		"cropperjs",
+		"logicflow",
+		"vueuse",
+		"zxcvbn",
+		"lintstagedrc",
+		"brotli",
+		"tailwindcss",
+		"sider"
+	],
+	//===========================================
+	//============ Explorer =====================
+	//===========================================
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.openEditors.visible": 0,
+	//===========================================
+	//============= Other =======================
+	//===========================================
+	"git.enableSmartCommit": true,
+	"workbench.settings.useSplitJSON": true,
+	"git.confirmSync": false,
+	"git.autofetch": true,
+	"npm.packageManager": "pnpm",
+	"debug.javascript.unmapMissingSources": true,
+	"breadcrumbs.enabled": true,
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	//===========================================
+	//============= Files =======================
+	//===========================================
+	"files.autoSave": "onFocusChange",
+	"files.eol": "\n",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"search.exclude": {
+		"**/._.DS_Store": true,
+		"**/node_modules": false,
+		"**/.next": true,
+		"**/*.log": true,
+		"**/*.log*": true,
+		"**/bower_components": true,
+		"**/dist": true,
+		"**/elehukouben": true,
+		"**/.git": true,
+		"**/.gitignore": true,
+		"**/.svn": true,
+		"**/.DS_Store": true,
+		"**/.idea": true,
+		"**/.vscode": false,
+		"**/yarn.lock": true,
+		"**/tmp": true,
+		"out": true,
+		"dist": true,
+		"node_modules": true,
+		"CHANGELOG.md": true,
+		"examples": true,
+		"res": true,
+		"screenshots": true,
+		"yarn-error.log": true,
+		"**/pnpm-lock.yaml": true,
+		"**/.yarn": true
+	},
+	"files.exclude": {
+		"**/.cache": true,
+		"**/.editorconfig": true,
+		"**/.eslintcache": true,
+		"**/bower_components": true,
+		"**/.idea": true,
+		"**/tmp": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/._.DS_Store": true,
+		"**/node_modules": false,
+		"**/.next": true,
+		"**/.git": true
+	},
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/.vscode/**": true,
+		"**/node_modules/**": true,
+		"**/tmp/**": true,
+		"**/bower_components/**": true,
+		"**/dist/**": true,
+		"**/yarn.lock": true
+	}
+}
